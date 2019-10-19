@@ -4,9 +4,16 @@ body {
 
 #hill-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
 .hill-list-item {
-  color: Maroon;
+  width: 10rem;
+  background-color: Green;
+  color: White;
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem;
+  border: 0px none;
+  border-radius: 3%;
 }
