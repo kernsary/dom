@@ -1,0 +1,12 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+#hill-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.hill-list-item {
+  color: Maroon;
+}
