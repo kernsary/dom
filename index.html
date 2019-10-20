@@ -2,44 +2,62 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>Hills</title>
+  <title>Hills rock!</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="js/app.js"></script>
 </head>
+<body>
 
-<form id="new-hill-form">
-  <div id="form-wrapper">
-    <div class="form-el">
-      <label for="name">Hill name</label>
-      <input type="text" id="name" required>
+  <div id="bar-wrapper">
+
+    <h1 class="main-heading">Hills rock!</h1>
+
+    <div class="form-wrapper">
+
+      <form id="new-hill-form">
+        <div id="form-wrapper">
+          <div class="form-el">
+            <label for="name">Hill name</label>
+            <p></p>
+            <input type="text" id="name" required>
+          </div>
+
+          <div class="form-el">
+            <label for="area">Area</label>
+            <p></p>
+            <input type="text" id="area" required>
+          </div>
+
+          <p>Select main rock type of hill:</p>
+
+          <div class="form-el">
+            <label for="metamorpic">Metamorphic</label>
+            <input type="radio" name="geology" id="metamorphic" value="Metamorphic">
+            <label for="sedimentary">Sedimentary</label>
+            <input type="radio" name="geology" id="sedimentary" value="Sedimentary">
+            <label for="volcanic">Volcanic</label>
+            <input type="radio" name="geology" id="volcanic" value="Volcanic">
+          </div>
+
+        </div>
+
+        <input id="submit-button" type="submit" value="Save">
+
+      </form>
     </div>
 
-    <div class="form-el">
-      <label for="area">Area</label>
-      <input type="text" id="area" required>
-    </div>
-
-    <p>Select main rock type of hill:</p>
-
-    <div class="form-el">
-      <label for="metamorpic">Metamorphic</label>
-      <input type="radio" name="geology" id="metamorphic" value="Metamorphic">
-      <label for="sedimentary">Sedimentary</label>
-      <input type="radio" name="geology" id="sedimentary" value="Sedimentary">
-      <label for="volcanic">Volcanic</label>
-      <input type="radio" name="geology" id="volcanic" value="Volcanic">
+    <div class="delete-wrapper">
+      <button id="delete-all-button">Delete all</button>
     </div>
 
   </div>
-  <input type="submit" value="save">
-</form>
 
-<button id="delete-all">Delete all</button>
+  <div id="list-wrapper">
 
-<h1>Hills climbed so far</h1>
-<div id="hill-list"></div>
+    <h2 id="hills-climbed-heading">Hills climbed so far</h2>
+    <div id="hill-list"></div>
 
-<body>
+  </div>
 
 </body>
 </html>

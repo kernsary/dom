@@ -1,15 +1,83 @@
 body {
+  display: flex;
   font-family: Helvetica, sans-serif;
+}
+
+#bar-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-heading {
+  width: 10rem;
+  background-color: Black;
+  color: White;
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem;
+  border: 0px none;
+  border-radius: 3%;
+}
+
+.form-wrapper {
+  width: 10rem;
+  background-color: saddlebrown;
+  color: White;
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem;
+  border: 0px none;
+  border-radius: 3%;
+}
+
+.form-el {
+  margin-bottom: 3rem;
+}
+
+#submit-button {
+  border: 0em none;
+  border-radius: 3%;
+  padding: 0.5rem 1rem;
+  width: auto;
+  font-size: 1em;
+}
+
+.delete-wrapper {
+  width: 10rem;
+  background-color: Black;
+  color: White;
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem;
+  border: 0px none;
+  border-radius: 3%;
+}
+
+#delete-all-button {
+  margin: 3rem 0rem 1.5rem 0rem;
+  border: 0em none;
+  border-radius: 3%;
+  padding: 0.1rem 0.2rem;
+  width: auto;
+  font-size: 1em;
+}
+
+#list-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#hills-climbed-heading {
+  margin-left: 0.5rem;
 }
 
 #hill-list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   list-style-type: none;
 }
 
 .hill-list-item {
   width: 10rem;
+  height: 8rem;
   background-color: Green;
   color: White;
   margin: 0.5rem 0.5rem;
