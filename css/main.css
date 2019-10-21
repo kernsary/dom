@@ -77,7 +77,7 @@ body {
 
 .hill-list-item {
   width: 10rem;
-  height: 8rem;
+  height: auto;
   background-color: Green;
   color: White;
   margin: 0.5rem 0.5rem;

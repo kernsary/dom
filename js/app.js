@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const newHillForm = document.querySelector("#new-hill-form");
   newHillForm.addEventListener("submit", handleNewHillFormSubmit);
 
-  const deleteAllButton = document.querySelector("#delete-all");
+  const deleteAllButton = document.querySelector("#delete-all-button");
   deleteAllButton.addEventListener("click", handleDeleteAllClick);
 })
 
